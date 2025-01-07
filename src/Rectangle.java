@@ -2,7 +2,6 @@ public class Rectangle implements Calculation{
     double sideOfA;
     double sideOfB;
     double sideFigure;
-    double perimeterFigure;
     String color;
     String colorLine;
 
@@ -15,9 +14,9 @@ public class Rectangle implements Calculation{
         System.out.println("Площадь пряоугольника равна - " + sideFigure);
     }
 
-    public void perimeterOfFigure() {
-        perimeterFigure = ((2*sideOfA) + (2*sideOfB));
-        System.out.println("Периметр прямоугольника равен - " + perimeterFigure);
+    @Override
+    public void perimeterOfFigure(double sideOfA, double sideOfB) {
+        System.out.println("Периметр прямоугольника равен - " + ((2*sideOfA) + (2*sideOfB)));
     }
 
     public double getSideOfA() {

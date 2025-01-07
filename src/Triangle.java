@@ -24,9 +24,8 @@ public class Triangle implements Calculation {
         System.out.println("Площадь треугольника равна - " + sideFigure);
     }
 
-    public void perimeterOfFigure() {
-        perimeterFigure = (sideOfC+sideOfB+sideOfA);
-        System.out.println("Периметр треугольника равен - " + perimeterFigure);
+    public void perimeterOfFigure(double sideOfA, double sideOfB, double sideOfC) {
+        System.out.println("Периметр треугольника равен - " + (sideOfA+sideOfB+sideOfC));
     }
 
     public double getSideOfA() {

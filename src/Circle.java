@@ -10,6 +10,7 @@ public class Circle implements Calculation {
     public Circle (double radius) {
         this.radius = radius;
     }
+    @Override
     public void areaOfFigure() {
         sideFigure = (radius*radius*pie);
         System.out.println("Площадь круга равна - " + sideFigure);
